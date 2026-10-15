@@ -12,6 +12,8 @@ const selection=option('--only');
 const pending=selection?assets.filter(a=>a.file===selection):assets;
 if(!pending.length)throw Error('No matching original artwork.');
 await fs.mkdir(destination,{recursive:true});
+// Prune only generated artwork removed from the approved manifest.
+if(!selection){const allowed=new Set(assets.map(a=>a.file));for(const file of await fs.readdir(destination)){if(/^(photo|project)-\d+\.png$/.test(file)&&!allowed.has(file))await fs.unlink(path.join(destination,file));}}
 function verify(data,asset){if(data.length!==asset.bytes||createHash('sha256').update(data).digest('hex')!==asset.sha256)throw Error(`Original image verification failed: ${asset.file}`);}
 async function readExisting(file){try{return await fs.readFile(file);}catch(error){if(error.code==='ENOENT')return null;throw error;}}
 let copied=0,cached=0;

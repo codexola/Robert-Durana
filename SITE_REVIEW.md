@@ -15,4 +15,4 @@ The deployment shown by the user was built from artwork-only commit 39135e2. Thi
 - A decorative category mask could clip artwork corners. Project images now use an unobstructed rectangular presentation with contain sizing.
 - Final-page pagination could remove the focused control. Focus now moves to the first newly revealed project when the button disappears.
 
-All six personal photos, the owner's name, all 102 projects, and project-specific stack analyses remain included. No source photographs were modified. Personal contact links remain absent.
+Only original photograph No. 6 remains in the personal section and site assets. It appears in six clickable frames in an animated 3D room, including wall, desktop, bedside, and bed placements. The other five personal photographs are excluded from deployment. The owner's name, all 102 projects, and project-specific stack analyses remain included. No source photographs were modified. Personal contact links remain absent.
