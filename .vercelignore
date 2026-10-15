@@ -1,0 +1,8 @@
+.git
+node_modules
+dist
+*.png
+PROJECT_STACKS.md
+README.md
+scripts/verify-originals.py
+public/artwork

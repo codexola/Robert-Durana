@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "image": "/artwork/photo-0.png",
+    "source": "me01.png",
+    "alt": "Personal photograph 1",
+    "caption": "Personal collection / 01",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/me01.png",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "id": 1,
+    "image": "/artwork/photo-1.png",
+    "source": "m022.png",
+    "alt": "Personal photograph 2",
+    "caption": "Personal collection / 02",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/m022.png",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "id": 2,
+    "image": "/artwork/photo-2.png",
+    "source": "m02342.png",
+    "alt": "Personal photograph 3",
+    "caption": "Personal collection / 03",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/m02342.png",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "id": 3,
+    "image": "/artwork/photo-3.png",
+    "source": "Warm Neutral Couple Portrait.png",
+    "alt": "Personal photograph 4",
+    "caption": "Personal collection / 04",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/Warm%20Neutral%20Couple%20Portrait.png",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "id": 4,
+    "image": "/artwork/photo-4.png",
+    "source": "Couple Portrait in Green Circle.png",
+    "alt": "Personal photograph 5",
+    "caption": "Personal collection / 05",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/Couple%20Portrait%20in%20Green%20Circle.png",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "id": 5,
+    "image": "/artwork/photo-5.png",
+    "source": "ChatGPT Image Oct 6, 2026, 08_52_21 AM.png",
+    "alt": "Personal photograph 6",
+    "caption": "Personal collection / 06",
+    "originalUrl": "https://raw.githubusercontent.com/codexola/Robert-Durana/39135e2c43e7127b7ea3c4fa1c09ce347b8adff5/ChatGPT%20Image%20Oct%206%2C%202026%2C%2008_52_21%20AM.png",
+    "width": 1269,
+    "height": 1240
+  }
+]

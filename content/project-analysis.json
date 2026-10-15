@@ -1,0 +1,3183 @@
+{
+  "0": {
+    "observed": "Dashboard summaries, project progress, task lists, calendar views, and administrative tables.",
+    "overview": "Nexora SaaS brings together project workspaces, task assignments, and calendar scheduling.",
+    "requirements": [
+      "Project workspaces",
+      "Task assignments",
+      "Calendar scheduling"
+    ],
+    "approach": "Start by defining project workspaces and its content/data model. Prototype task assignments, implement calendar scheduling, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript + TanStack Query",
+        "purpose": "Reusable dashboards, tables, filters, and server-state updates."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL",
+        "purpose": "Project, task, calendar, and account APIs with relational persistence."
+      },
+      {
+        "layer": "Access & reporting",
+        "technology": "OIDC authentication + role-based access + Apache ECharts",
+        "purpose": "Workspace permissions and progress visualizations."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + Vitest",
+        "purpose": "Verify workspace flows, access rules, and task-state changes."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "1": {
+    "observed": "Editorial jewelry photography, category browsing, product pages, and mobile storefront layouts.",
+    "overview": "Lumière Luxury Jewelry brings together jewelry catalog, product variants, and cart and checkout.",
+    "requirements": [
+      "Jewelry catalog",
+      "Product variants",
+      "Cart and checkout"
+    ],
+    "approach": "Start by defining jewelry catalog and its content/data model. Prototype product variants, implement cart and checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "2": {
+    "observed": "WhatsApp conversation previews, a contact workspace, activity charts, and integration icons.",
+    "overview": "WachatAI WhatsApp Automation brings together conversation routing, contact synchronization, and automation reporting.",
+    "requirements": [
+      "Conversation routing",
+      "Contact synchronization",
+      "Automation reporting"
+    ],
+    "approach": "Start by defining conversation routing and its content/data model. Prototype contact synchronization, implement automation reporting, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Messaging",
+        "technology": "WhatsApp Business Platform Cloud API + signed webhooks",
+        "purpose": "Receive inbound messages and deliver approved outbound messages."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Persist contacts, conversation state, and retryable message jobs."
+      },
+      {
+        "layer": "Assistant & interface",
+        "technology": "LLM API with retrieval + React/TypeScript",
+        "purpose": "Ground support responses in approved content and expose a human inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright + webhook replay fixtures",
+        "purpose": "Test conversation transitions, retries, delivery failures, and handoff."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "3": {
+    "observed": "Architectural photography, project grids, service explanations, and responsive layouts.",
+    "overview": "Japanese Architecture brings together project gallery, service pages, and inquiry workflow.",
+    "requirements": [
+      "Project gallery",
+      "Service pages",
+      "Inquiry workflow"
+    ],
+    "approach": "Start by defining project gallery and its content/data model. Prototype service pages, implement inquiry workflow, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Fast, responsive service and project pages."
+      },
+      {
+        "layer": "Content",
+        "technology": "Sanity CMS + image optimization",
+        "purpose": "Manage project imagery, service content, and localized copy."
+      },
+      {
+        "layer": "Forms",
+        "technology": "Server-side form endpoint + transactional email",
+        "purpose": "Validate inquiries and deliver them to a configured team inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check navigation, forms, responsive layouts, and accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "4": {
+    "observed": "SPUNTA logo variations, earthy color swatches, typography, stationery, and digital applications.",
+    "overview": "SPUNTA AI Brand Identity brings together vector identity, brand guidelines, and application mockups.",
+    "requirements": [
+      "Vector identity",
+      "Brand guidelines",
+      "Application mockups"
+    ],
+    "approach": "Explore logo concepts, establish typography and color rules, then extend the selected identity into the applications shown. Deliver vector masters and a reviewed usage guide.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Create scalable logos, typography layouts, and identity assets."
+      },
+      {
+        "layer": "Applications",
+        "technology": "Figma + Adobe Photoshop",
+        "purpose": "Explore digital components and photographic application mockups."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "SVG/PDF exports + color-managed brand guide",
+        "purpose": "Package reusable artwork and document color, spacing, and type rules."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "5": {
+    "observed": "A cinematic landing page with dark visual treatment, launch imagery, service blocks, and a project reel.",
+    "overview": "LaunchFrame Cinematic Studio Landing Page brings together video showreel, service storytelling, and project publishing.",
+    "requirements": [
+      "Video showreel",
+      "Service storytelling",
+      "Project publishing"
+    ],
+    "approach": "Start by defining video showreel and its content/data model. Prototype service storytelling, implement project publishing, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS + GSAP",
+        "purpose": "Build editorial case studies, transitions, and reduced-motion alternatives."
+      },
+      {
+        "layer": "Media & content",
+        "technology": "Sanity CMS + Mux video",
+        "purpose": "Publish projects, optimized video reels, posters, and captions."
+      },
+      {
+        "layer": "Visual production",
+        "technology": "DaVinci Resolve",
+        "purpose": "Prepare color-consistent footage and streaming-ready reel exports."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check media controls, keyboard navigation, and mobile layouts."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "6": {
+    "observed": "Balance cards, income and expense graphs, transaction lists, and a mobile financial overview.",
+    "overview": "PayFlow Fintech brings together financial summaries, transaction categorization, and reconciled reporting.",
+    "requirements": [
+      "Financial summaries",
+      "Transaction categorization",
+      "Reconciled reporting"
+    ],
+    "approach": "Define account and transaction models with decimal amounts, map import/category rules, and build the summary views. Reconcile reports against transaction-level fixtures and test duplicates, rounding, and date filters.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript + Apache ECharts",
+        "purpose": "Visualize financial summaries, category charts, and transactions."
+      },
+      {
+        "layer": "Data & accounting",
+        "technology": "NestJS + PostgreSQL with decimal amounts",
+        "purpose": "Model entries, categories, account balances, and auditable reporting."
+      },
+      {
+        "layer": "Imports & jobs",
+        "technology": "CSV parsers + Redis/BullMQ",
+        "purpose": "Validate transaction imports and generate repeatable reporting jobs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright",
+        "purpose": "Test totals, rounding, import deduplication, and filtered reports."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "7": {
+    "observed": "Rider and driver screens with maps, route selection, ride status, ratings, and an administration panel.",
+    "overview": "MoveEasy Ride-Hailing App brings together live driver location, trip dispatch, and ride status synchronization.",
+    "requirements": [
+      "Live driver location",
+      "Trip dispatch",
+      "Ride status synchronization"
+    ],
+    "approach": "Prototype the rider/driver journey, model trip states and geospatial records, then connect routing, location updates, and dispatch. Test background permissions, competing driver acceptance, cancellation, and reconnect behavior.",
+    "stack": [
+      {
+        "layer": "Mobile",
+        "technology": "React Native + TypeScript + Mapbox Maps/Directions",
+        "purpose": "Rider/driver interfaces, map display, routing, and location permissions."
+      },
+      {
+        "layer": "Dispatch",
+        "technology": "NestJS + WebSockets + Redis",
+        "purpose": "Coordinate trip acceptance, driver presence, and live trip updates."
+      },
+      {
+        "layer": "Persistence & notifications",
+        "technology": "PostgreSQL/PostGIS + FCM/APNs",
+        "purpose": "Store geospatial trip data and deliver ride-status notifications."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + API concurrency tests",
+        "purpose": "Check booking transitions, reconnects, cancellations, and location updates."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "8": {
+    "observed": "High-contrast studio pages, a project thumbnail grid, editorial typography, and mobile layouts.",
+    "overview": "Pecosia Cinematic Studio brings together case-study publishing, video portfolio, and responsive editorial layout.",
+    "requirements": [
+      "Case-study publishing",
+      "Video portfolio",
+      "Responsive editorial layout"
+    ],
+    "approach": "Start by defining case-study publishing and its content/data model. Prototype video portfolio, implement responsive editorial layout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS + GSAP",
+        "purpose": "Build editorial case studies, transitions, and reduced-motion alternatives."
+      },
+      {
+        "layer": "Media & content",
+        "technology": "Sanity CMS + Mux video",
+        "purpose": "Publish projects, optimized video reels, posters, and captions."
+      },
+      {
+        "layer": "Visual production",
+        "technology": "DaVinci Resolve",
+        "purpose": "Prepare color-consistent footage and streaming-ready reel exports."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check media controls, keyboard navigation, and mobile layouts."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "9": {
+    "observed": "A live-video workspace with chat, creator profiles, challenge panels, and dark mobile screens.",
+    "overview": "Neon Streaming Challenge brings together live streaming, chat delivery, and challenge state.",
+    "requirements": [
+      "Live streaming",
+      "Chat delivery",
+      "Challenge state"
+    ],
+    "approach": "Start by defining live streaming and its content/data model. Prototype chat delivery, implement challenge state, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript",
+        "purpose": "Build creator pages, challenge panels, and responsive live layouts."
+      },
+      {
+        "layer": "Video",
+        "technology": "Mux Live + HLS player",
+        "purpose": "Ingest and deliver live streams with adaptive playback."
+      },
+      {
+        "layer": "Realtime & storage",
+        "technology": "NestJS + WebSockets + Redis + PostgreSQL",
+        "purpose": "Synchronize chat, challenge events, and persisted account state."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + k6",
+        "purpose": "Test playback states, chat reconnects, and concurrent event delivery."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "10": {
+    "observed": "Football merchandise grids, team categories, product customization, and a shopping cart.",
+    "overview": "Futbolstore Ecommerce brings together team catalog, jersey personalization, and checkout.",
+    "requirements": [
+      "Team catalog",
+      "Jersey personalization",
+      "Checkout"
+    ],
+    "approach": "Start by defining team catalog and its content/data model. Prototype jersey personalization, implement checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "11": {
+    "observed": "Concert photography, event listings, program details, and mobile event discovery.",
+    "overview": "Harmony Japan Concert Experience brings together event publishing, program schedules, and ticket-provider links.",
+    "requirements": [
+      "Event publishing",
+      "Program schedules",
+      "Ticket-provider links"
+    ],
+    "approach": "Start by defining event publishing and its content/data model. Prototype program schedules, implement ticket-provider links, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Next.js + TypeScript + next-intl",
+        "purpose": "Localized event listings, event details, and schedule browsing."
+      },
+      {
+        "layer": "Publishing",
+        "technology": "Sanity CMS",
+        "purpose": "Maintain venues, programs, images, and event schedules."
+      },
+      {
+        "layer": "Ticketing",
+        "technology": "Ticket-provider API or hosted booking link",
+        "purpose": "Connect event discovery to an existing ticketing service."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright",
+        "purpose": "Check locale switching, event dates, and ticket redirects."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "13": {
+    "observed": "Customer-service chat, an administration table, a conversation flow diagram, and connected integrations.",
+    "overview": "WhatsApp AI Chatbot for Customer Service brings together customer support, knowledge retrieval, and human handoff.",
+    "requirements": [
+      "Customer support",
+      "Knowledge retrieval",
+      "Human handoff"
+    ],
+    "approach": "Start by defining customer support and its content/data model. Prototype knowledge retrieval, implement human handoff, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Messaging",
+        "technology": "WhatsApp Business Platform Cloud API + signed webhooks",
+        "purpose": "Receive inbound messages and deliver approved outbound messages."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Persist contacts, conversation state, and retryable message jobs."
+      },
+      {
+        "layer": "Assistant & interface",
+        "technology": "LLM API with retrieval + React/TypeScript",
+        "purpose": "Ground support responses in approved content and expose a human inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright + webhook replay fixtures",
+        "purpose": "Test conversation transitions, retries, delivery failures, and handoff."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "14": {
+    "observed": "Discount grids, coupon cards, retailer icons, search, and responsive deal pages.",
+    "overview": "PromoHub Deals Platform UI brings together coupon publishing, retailer feeds, and offer expiry.",
+    "requirements": [
+      "Coupon publishing",
+      "Retailer feeds",
+      "Offer expiry"
+    ],
+    "approach": "Start by defining coupon publishing and its content/data model. Prototype retailer feeds, implement offer expiry, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Build searchable deal listings, coupon views, and retailer pages."
+      },
+      {
+        "layer": "Data & search",
+        "technology": "PostgreSQL + Meilisearch",
+        "purpose": "Index products, retailers, categories, and promotion metadata."
+      },
+      {
+        "layer": "Feeds & scheduling",
+        "technology": "NestJS + Redis/BullMQ",
+        "purpose": "Import permitted affiliate feeds and expire promotions on schedule."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright",
+        "purpose": "Test expiry boundaries, coupon links, and search filters."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "15": {
+    "observed": "Beauty product categories, individual product pages, a basket, and a mobile storefront.",
+    "overview": "LUMIÈRE Beauty E-Commerce brings together beauty catalog, product filtering, and checkout.",
+    "requirements": [
+      "Beauty catalog",
+      "Product filtering",
+      "Checkout"
+    ],
+    "approach": "Start by defining beauty catalog and its content/data model. Prototype product filtering, implement checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "16": {
+    "observed": "Underwater imagery, historical maps, chapter-style text, and documentary scene compositions.",
+    "overview": "Atlantis · Myth, History, Reality brings together historical narrative, map animation, and documentary edit.",
+    "requirements": [
+      "Historical narrative",
+      "Map animation",
+      "Documentary edit"
+    ],
+    "approach": "Develop the narrative and shot sequence, assemble licensed footage and narration, then add maps, titles, and supporting graphics. Finish the color, sound, captions, and platform exports through editorial review.",
+    "stack": [
+      {
+        "layer": "Editing",
+        "technology": "DaVinci Resolve",
+        "purpose": "Assemble narration, sourced footage, color correction, and audio mix."
+      },
+      {
+        "layer": "Motion",
+        "technology": "After Effects",
+        "purpose": "Create title sequences, historical maps, and visual overlays."
+      },
+      {
+        "layer": "Assets & delivery",
+        "technology": "Photoshop + licensed footage/audio + caption exports",
+        "purpose": "Prepare artwork, track source licenses, and deliver platform-ready masters."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "18": {
+    "observed": "SPUNTA logo treatments, typography, muted color references, stationery, and device mockups.",
+    "overview": "Spunta Brand Identity Moodboard brings together identity exploration, typography system, and brand applications.",
+    "requirements": [
+      "Identity exploration",
+      "Typography system",
+      "Brand applications"
+    ],
+    "approach": "Explore logo concepts, establish typography and color rules, then extend the selected identity into the applications shown. Deliver vector masters and a reviewed usage guide.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Create scalable logos, typography layouts, and identity assets."
+      },
+      {
+        "layer": "Applications",
+        "technology": "Figma + Adobe Photoshop",
+        "purpose": "Explore digital components and photographic application mockups."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "SVG/PDF exports + color-managed brand guide",
+        "purpose": "Package reusable artwork and document color, spacing, and type rules."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "19": {
+    "observed": "WhatsApp fitness-assistant screens, workout and nutrition exchanges, and an administration view.",
+    "overview": "GymFit · Asistente IA para WhatsApp brings together workout conversations, scheduled reminders, and member history.",
+    "requirements": [
+      "Workout conversations",
+      "Scheduled reminders",
+      "Member history"
+    ],
+    "approach": "Start by defining workout conversations and its content/data model. Prototype scheduled reminders, implement member history, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Messaging",
+        "technology": "WhatsApp Business Platform Cloud API + signed webhooks",
+        "purpose": "Receive inbound messages and deliver approved outbound messages."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Persist contacts, conversation state, and retryable message jobs."
+      },
+      {
+        "layer": "Fitness content & scheduling",
+        "technology": "Approved workout library + LLM API + scheduled jobs",
+        "purpose": "Retrieve reviewed exercise guidance and send scheduled member reminders."
+      },
+      {
+        "layer": "Operations & QA",
+        "technology": "React/TypeScript + conversation fixtures",
+        "purpose": "Review member workflows and verify reminders and escalation paths."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "20": {
+    "observed": "Warm Japanese bookstore/editorial page concepts with book photography, article layouts, and mobile views.",
+    "overview": "Warm Japanese Editorial Web brings together editorial publishing, book discovery, and responsive typography.",
+    "requirements": [
+      "Editorial publishing",
+      "Book discovery",
+      "Responsive typography"
+    ],
+    "approach": "Start by defining editorial publishing and its content/data model. Prototype book discovery, implement responsive typography, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Build typography-led articles, editorial landing pages, and mobile navigation."
+      },
+      {
+        "layer": "Content",
+        "technology": "Sanity CMS + optimized images",
+        "purpose": "Manage books/articles, structured page sections, and responsive photography."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check reading layouts, content navigation, and accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "21": {
+    "observed": "Two technology-services landing-page treatments with comparison content, service cards, and calls to action.",
+    "overview": "Japanese Tech Service Landing Page Comparison brings together service comparison, lead capture, and responsive page variants.",
+    "requirements": [
+      "Service comparison",
+      "Lead capture",
+      "Responsive page variants"
+    ],
+    "approach": "Start by defining service comparison and its content/data model. Prototype lead capture, implement responsive page variants, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Fast, responsive service and project pages."
+      },
+      {
+        "layer": "Content",
+        "technology": "Sanity CMS + image optimization",
+        "purpose": "Manage project imagery, service content, and localized copy."
+      },
+      {
+        "layer": "Forms",
+        "technology": "Server-side form endpoint + transactional email",
+        "purpose": "Validate inquiries and deliver them to a configured team inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check navigation, forms, responsive layouts, and accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "22": {
+    "observed": "A Japanese e-commerce development proposal with scope, pricing, process diagrams, and delivery details.",
+    "overview": "フルスタックエンジニア向けEC開発提案書 brings together scope documentation, estimate layout, and pdf delivery.",
+    "requirements": [
+      "Scope documentation",
+      "Estimate layout",
+      "PDF delivery"
+    ],
+    "approach": "Define scope, deliverables, assumptions, timeline, and pricing; arrange them into a readable Japanese proposal. Review the estimates and export a PDF with embedded fonts and intact links.",
+    "stack": [
+      {
+        "layer": "Document design",
+        "technology": "Figma + Google Docs/Sheets",
+        "purpose": "Organize scope, timeline, pricing, and technical diagrams."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Embedded Japanese fonts + accessible PDF export",
+        "purpose": "Preserve legibility, selectable text, and consistent page layout."
+      },
+      {
+        "layer": "Review",
+        "technology": "PDF preflight + estimate review",
+        "purpose": "Check font embedding, page breaks, pricing calculations, and scope consistency."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "23": {
+    "observed": "An order-processing comparison, a multichannel workflow diagram, logistics integrations, and reporting charts.",
+    "overview": "Optimización Integral de Pedidos con OrderPro brings together order ingestion, inventory synchronization, and shipping events.",
+    "requirements": [
+      "Order ingestion",
+      "Inventory synchronization",
+      "Shipping events"
+    ],
+    "approach": "Start by defining order ingestion and its content/data model. Prototype inventory synchronization, implement shipping events, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript",
+        "purpose": "Show operational orders, inventory state, and logistics reporting."
+      },
+      {
+        "layer": "Integration",
+        "technology": "NestJS + commerce/shipping APIs + signed webhooks",
+        "purpose": "Normalize incoming orders and fulfillment events."
+      },
+      {
+        "layer": "Persistence & execution",
+        "technology": "PostgreSQL + Redis/BullMQ",
+        "purpose": "Track order transitions, retries, and idempotent synchronization."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Contract tests + Playwright",
+        "purpose": "Test duplicate events, partial failures, and shipment status changes."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "24": {
+    "observed": "An Odoo-branded manufacturing dashboard with raw materials, production, stock, invoicing, and delivery panels.",
+    "overview": "Odoo Cleaning Factory brings together manufacturing orders, inventory movements, and invoice reporting.",
+    "requirements": [
+      "Manufacturing orders",
+      "Inventory movements",
+      "Invoice reporting"
+    ],
+    "approach": "Map the manufacturing and sales workflow to Odoo modules, configure stock locations and production rules, and add only necessary model/view customizations. Reconcile material usage, deliveries, and invoices using realistic fixtures.",
+    "stack": [
+      {
+        "layer": "ERP",
+        "technology": "Odoo Manufacturing + Inventory + Sales + Invoicing",
+        "purpose": "Implement connected production, stock, delivery, and invoice workflows."
+      },
+      {
+        "layer": "Customization",
+        "technology": "Python + Odoo ORM + PostgreSQL",
+        "purpose": "Add domain-specific models, calculations, and business rules."
+      },
+      {
+        "layer": "Interface",
+        "technology": "Odoo XML views + Owl/JavaScript",
+        "purpose": "Adapt dashboards and forms within the ERP interface."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Odoo test framework + workflow fixtures",
+        "purpose": "Verify production consumption, stock moves, and invoice totals."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "25": {
+    "observed": "Careers and culture pages with job listings, people photography, benefits, and mobile layouts.",
+    "overview": "Modern Careers and People Culture Pages brings together job listings, application intake, and culture content.",
+    "requirements": [
+      "Job listings",
+      "Application intake",
+      "Culture content"
+    ],
+    "approach": "Start by defining job listings and its content/data model. Prototype application intake, implement culture content, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Next.js + TypeScript + CMS",
+        "purpose": "Publish role listings, team/culture pages, and responsive candidate journeys."
+      },
+      {
+        "layer": "Applications",
+        "technology": "ATS API integration + server-side form validation",
+        "purpose": "Submit applications and track role availability without duplicating ATS data."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Test vacancy filters, application errors, and keyboard accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "26": {
+    "observed": "A discount marketplace layout with retailer logos, categories, promotional banners, and product cards.",
+    "overview": "OfertasTop Deals Platform brings together deal search, retailer taxonomy, and promotion scheduling.",
+    "requirements": [
+      "Deal search",
+      "Retailer taxonomy",
+      "Promotion scheduling"
+    ],
+    "approach": "Start by defining deal search and its content/data model. Prototype retailer taxonomy, implement promotion scheduling, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Build searchable deal listings, coupon views, and retailer pages."
+      },
+      {
+        "layer": "Data & search",
+        "technology": "PostgreSQL + Meilisearch",
+        "purpose": "Index products, retailers, categories, and promotion metadata."
+      },
+      {
+        "layer": "Feeds & scheduling",
+        "technology": "NestJS + Redis/BullMQ",
+        "purpose": "Import permitted affiliate feeds and expire promotions on schedule."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright",
+        "purpose": "Test expiry boundaries, coupon links, and search filters."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "27": {
+    "observed": "Documentary title graphics, historical and business thumbnail compositions, and an editing timeline.",
+    "overview": "Imperios, Misterios y Edición Cinemática brings together narrative sequencing, title animation, and color and audio finishing.",
+    "requirements": [
+      "Narrative sequencing",
+      "Title animation",
+      "Color and audio finishing"
+    ],
+    "approach": "Develop the narrative and shot sequence, assemble licensed footage and narration, then add maps, titles, and supporting graphics. Finish the color, sound, captions, and platform exports through editorial review.",
+    "stack": [
+      {
+        "layer": "Editing",
+        "technology": "DaVinci Resolve",
+        "purpose": "Assemble narration, sourced footage, color correction, and audio mix."
+      },
+      {
+        "layer": "Motion",
+        "technology": "After Effects",
+        "purpose": "Create title sequences, historical maps, and visual overlays."
+      },
+      {
+        "layer": "Assets & delivery",
+        "technology": "Photoshop + licensed footage/audio + caption exports",
+        "purpose": "Prepare artwork, track source licenses, and deliver platform-ready masters."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "28": {
+    "observed": "A voice-talent production brief showing recording requirements, country targeting, and submission stages.",
+    "overview": "Convocatoria de Locutores Latinoamericanos brings together voice recording, audio cleanup, and audition delivery.",
+    "requirements": [
+      "Voice recording",
+      "Audio cleanup",
+      "Audition delivery"
+    ],
+    "approach": "Confirm the script, pronunciation, accent, and delivery specification. Record consistent takes, edit noise and timing, and review the master against agreed loudness and audio-format requirements.",
+    "stack": [
+      {
+        "layer": "Recording",
+        "technology": "Reaper + audio interface + studio microphone",
+        "purpose": "Record clean voice takes with consistent input levels."
+      },
+      {
+        "layer": "Audio processing",
+        "technology": "ReaEQ/ReaComp + noise cleanup",
+        "purpose": "Edit breaths, balance dynamics, and reduce unwanted noise."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "WAV masters + loudness/peak metering",
+        "purpose": "Export to the agreed sample rate, bit depth, and loudness specification."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "29": {
+    "observed": "Japanese cookware marketplace listing treatments, food photography, price callouts, and product information blocks.",
+    "overview": "Japanese Cookware E-Commerce brings together marketplace listing images, localized product content, and export templates.",
+    "requirements": [
+      "Marketplace listing images",
+      "Localized product content",
+      "Export templates"
+    ],
+    "approach": "Collect accurate product specifications and approved photography, compose benefit and dimension panels, and review the Japanese copy. Validate each exported listing image against its target marketplace requirements.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Composite product/food photography, icons, and dimension diagrams."
+      },
+      {
+        "layer": "Localization",
+        "technology": "Figma + Japanese typography review",
+        "purpose": "Create reusable listing layouts with readable localized copy."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Marketplace-specific image templates + color-managed exports",
+        "purpose": "Export assets to the dimensions and content rules of the intended marketplace."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "30": {
+    "observed": "A cookware infographic with food photography, feature panels, product dimensions, and marketplace presentation.",
+    "overview": "Cookware E‑Commerce brings together product feature graphics, dimension diagrams, and listing asset export.",
+    "requirements": [
+      "Product feature graphics",
+      "Dimension diagrams",
+      "Listing asset export"
+    ],
+    "approach": "Collect accurate product specifications and approved photography, compose benefit and dimension panels, and review the Japanese copy. Validate each exported listing image against its target marketplace requirements.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Composite product/food photography, icons, and dimension diagrams."
+      },
+      {
+        "layer": "Localization",
+        "technology": "Figma + Japanese typography review",
+        "purpose": "Create reusable listing layouts with readable localized copy."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Marketplace-specific image templates + color-managed exports",
+        "purpose": "Export assets to the dimensions and content rules of the intended marketplace."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "31": {
+    "observed": "A creative-services storefront with service cards, work examples, pricing, and customer/admin order views.",
+    "overview": "AIPro Creative Services brings together service catalog, creative job queue, and client deliverables.",
+    "requirements": [
+      "Service catalog",
+      "Creative job queue",
+      "Client deliverables"
+    ],
+    "approach": "Start by defining service catalog and its content/data model. Prototype creative job queue, implement client deliverables, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront & workspace",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Present services, quotes, order status, and client deliverables."
+      },
+      {
+        "layer": "Production backend",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Track briefs, payments, production jobs, and asynchronous delivery."
+      },
+      {
+        "layer": "Generation & assets",
+        "technology": "Provider LLM/image APIs + S3-compatible storage",
+        "purpose": "Run approved creative generation tasks and store versioned outputs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + provider contract tests",
+        "purpose": "Test purchase/brief flows, provider failures, and delivery permissions."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "32": {
+    "observed": "An eyewear storefront with lens-test visuals, virtual try-on screens, product categories, and appointment prompts.",
+    "overview": "VisioCare Virtual Eyewear Experience brings together eyewear catalog, camera try-on, and appointment requests.",
+    "requirements": [
+      "Eyewear catalog",
+      "Camera try-on",
+      "Appointment requests"
+    ],
+    "approach": "Build the product catalog and shopping flow, calibrate eyewear assets to face landmarks, and connect booking availability. Validate camera permission behavior, device performance, fit alignment, and checkout accessibility.",
+    "stack": [
+      {
+        "layer": "Commerce",
+        "technology": "Shopify + Liquid + JavaScript",
+        "purpose": "Provide eyewear browsing, product variants, cart, and checkout."
+      },
+      {
+        "layer": "Virtual try-on",
+        "technology": "MediaPipe Face Landmarker + Three.js/WebGL",
+        "purpose": "Align calibrated frame assets to face landmarks in a camera view."
+      },
+      {
+        "layer": "Appointments",
+        "technology": "Booking-provider API + server endpoint",
+        "purpose": "Connect appointment availability and confirmation."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + device/camera testing",
+        "purpose": "Test camera permissions, fit alignment, shopping, and booking states."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "33": {
+    "observed": "WordPress plugin-management screens, a conflict warning, and before/after remediation examples.",
+    "overview": "Diagnóstico y Solución de Plugins WordPress (1) brings together plugin isolation, php diagnostics, and regression verification.",
+    "requirements": [
+      "Plugin isolation",
+      "PHP diagnostics",
+      "Regression verification"
+    ],
+    "approach": "Create a recoverable staging copy of the actual site, reproduce the conflict, and isolate the responsible plugin/theme combination. Apply a supported fix and verify the affected workflows before deployment.",
+    "stack": [
+      {
+        "layer": "Runtime",
+        "technology": "WordPress + PHP + MySQL/MariaDB",
+        "purpose": "Reproduce the actual plugin/theme environment on staging."
+      },
+      {
+        "layer": "Diagnostics",
+        "technology": "WP-CLI + PHP error logs + Query Monitor",
+        "purpose": "Isolate plugin conflicts and inspect errors and slow requests."
+      },
+      {
+        "layer": "Verification",
+        "technology": "PHPUnit + Playwright + backup/restore tooling",
+        "purpose": "Test repaired workflows against a recoverable staging copy before release."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "34": {
+    "observed": "WhatsApp check-in screens, location and photo prompts, attendance tables, and report exports.",
+    "overview": "WhatsApp Attendance System brings together employee check-in, location capture, and attendance exports.",
+    "requirements": [
+      "Employee check-in",
+      "Location capture",
+      "Attendance exports"
+    ],
+    "approach": "Start by defining employee check-in and its content/data model. Prototype location capture, implement attendance exports, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Channel",
+        "technology": "WhatsApp Cloud API + signed webhooks",
+        "purpose": "Receive attendance messages, authorized location data, and attachments."
+      },
+      {
+        "layer": "Backend & records",
+        "technology": "NestJS + PostgreSQL + S3-compatible storage",
+        "purpose": "Persist attendance events, timestamps, attachment references, and permissions."
+      },
+      {
+        "layer": "Operations",
+        "technology": "React/TypeScript + CSV/PDF export + scheduled jobs",
+        "purpose": "Review exceptions, produce attendance reports, and send reminders."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + webhook fixtures",
+        "purpose": "Check timezone rules, duplicate check-ins, invalid locations, and report totals."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "35": {
+    "observed": "A web/mobile QA workflow with dashboard samples, bug-report examples, and device-testing requirements.",
+    "overview": "QA Testing Recruitment brings together cross-browser testing, mobile scenarios, and bug reporting.",
+    "requirements": [
+      "Cross-browser testing",
+      "Mobile scenarios",
+      "Bug reporting"
+    ],
+    "approach": "Define the target browsers/devices and critical user journeys, convert them into repeatable functional and API checks, and collect reproducible defects with evidence. Retest fixes and publish the results with clear coverage limits.",
+    "stack": [
+      {
+        "layer": "Web tests",
+        "technology": "Playwright + axe-core",
+        "purpose": "Automate functional, responsive, keyboard, and accessibility checks."
+      },
+      {
+        "layer": "Mobile tests",
+        "technology": "Appium + Android/iOS device matrix",
+        "purpose": "Exercise native mobile flows and device-specific behavior."
+      },
+      {
+        "layer": "API & reporting",
+        "technology": "Postman/Newman + issue tracker + CI artifacts",
+        "purpose": "Validate API contracts and attach reproducible steps, logs, and screenshots."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "36": {
+    "observed": "Two fitness-brand social grids using bold type, gym photography, Halloween campaigns, and repeated formats.",
+    "overview": "MuscleFit and Fre2 Halloween Gym Grid brings together campaign templates, photo compositing, and social exports.",
+    "requirements": [
+      "Campaign templates",
+      "Photo compositing",
+      "Social exports"
+    ],
+    "approach": "Define each campaign’s message and visual rules, create a reusable layout family, and composite the supplied photography. Review legibility and safe areas before exporting each social format.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Create campaign composites, vector graphics, and typography systems."
+      },
+      {
+        "layer": "Templates",
+        "technology": "Figma",
+        "purpose": "Maintain reusable post, story, cover, and sticker layouts."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Platform-specific export presets",
+        "purpose": "Prepare consistent aspect ratios, safe areas, and optimized image assets."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "37": {
+    "observed": "An optical-workshop order dashboard with customer records, order states, WhatsApp conversations, and payment figures.",
+    "overview": "ÓpticaVision · Gestão Inteligente de Ordens brings together optical order tracking, customer records, and status notifications.",
+    "requirements": [
+      "Optical order tracking",
+      "Customer records",
+      "Status notifications"
+    ],
+    "approach": "Start by defining optical order tracking and its content/data model. Prototype customer records, implement status notifications, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript",
+        "purpose": "Present optical orders, customer history, statuses, and payment summaries."
+      },
+      {
+        "layer": "Backend",
+        "technology": "NestJS + PostgreSQL",
+        "purpose": "Model order stages, lens specifications, clients, and audit events."
+      },
+      {
+        "layer": "Messaging & reports",
+        "technology": "WhatsApp Cloud API + BullMQ + PDF generation",
+        "purpose": "Queue order updates and generate customer/order documents."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright",
+        "purpose": "Check state transitions, notification retries, and order calculations."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "38": {
+    "observed": "A clinic-advisory portal with course categories, video lessons, community activity, and progress tracking.",
+    "overview": "Clínicas Elite Advisory brings together course access, learning progress, and community discussions.",
+    "requirements": [
+      "Course access",
+      "Learning progress",
+      "Community discussions"
+    ],
+    "approach": "Start by defining course access and its content/data model. Prototype learning progress, implement community discussions, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Portal",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Present course libraries, lesson views, and progress dashboards."
+      },
+      {
+        "layer": "Learning backend",
+        "technology": "NestJS + PostgreSQL + role-based access",
+        "purpose": "Track enrollments, lesson completion, and community permissions."
+      },
+      {
+        "layer": "Video & files",
+        "technology": "Mux + S3-compatible storage",
+        "purpose": "Deliver captioned lessons and controlled-access resources."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + API authorization tests",
+        "purpose": "Check enrollment access, resume progress, and community actions."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "39": {
+    "observed": "Lottery selection screens, number grids, performance charts, and account dashboards.",
+    "overview": "SortePlay Lottery Platform brings together number selection, draw-history reporting, and account records.",
+    "requirements": [
+      "Number selection",
+      "Draw-history reporting",
+      "Account records"
+    ],
+    "approach": "Start by defining number selection and its content/data model. Prototype draw-history reporting, implement account records, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript",
+        "purpose": "Implement number selection, account views, and historical draw charts."
+      },
+      {
+        "layer": "Domain backend",
+        "technology": "NestJS + PostgreSQL + scheduled draw imports",
+        "purpose": "Persist selections and validate permitted historical result feeds."
+      },
+      {
+        "layer": "Integrity & QA",
+        "technology": "Auditable calculations + Vitest + Playwright",
+        "purpose": "Check selection rules and report historical statistics without implying improved odds."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "40": {
+    "observed": "Legal calculation cases, file import, calculation stages, a data table, and generated report previews.",
+    "overview": "JurisCalc TJRJ Legal brings together calculation engine, case imports, and pdf calculation reports.",
+    "requirements": [
+      "Calculation engine",
+      "Case imports",
+      "PDF calculation reports"
+    ],
+    "approach": "Confirm jurisdiction-specific formulas and authoritative rule versions with a qualified reviewer, implement deterministic decimal calculations, and add import/report flows. Validate rounding, dates, and results against reviewed reference cases.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript",
+        "purpose": "Build case forms, data import, calculation previews, and result tables."
+      },
+      {
+        "layer": "Calculation engine",
+        "technology": "Python + Decimal + versioned rule fixtures",
+        "purpose": "Apply jurisdiction-specific formulas with explicit precision and rule versions."
+      },
+      {
+        "layer": "Storage & output",
+        "technology": "PostgreSQL + openpyxl + WeasyPrint",
+        "purpose": "Persist cases and export spreadsheets and reproducible PDF reports."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + expert-reviewed golden cases",
+        "purpose": "Verify formulas, rounding, date handling, and legally reviewed examples."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "41": {
+    "observed": "A device-control dashboard showing device states, workflow nodes, execution logs, and telemetry charts.",
+    "overview": "Mobile Automation Control brings together device orchestration, job execution, and telemetry streaming.",
+    "requirements": [
+      "Device orchestration",
+      "Job execution",
+      "Telemetry streaming"
+    ],
+    "approach": "Model authorized device capabilities and workflow states, implement queued device adapters, and stream status/log updates. Test disconnected devices, cancellation, retries, and partial execution without duplicating actions.",
+    "stack": [
+      {
+        "layer": "Control interface",
+        "technology": "React + TypeScript + Apache ECharts",
+        "purpose": "Display devices, workflow execution, logs, and telemetry."
+      },
+      {
+        "layer": "Orchestration",
+        "technology": "Python/FastAPI + Appium + Redis workers",
+        "purpose": "Schedule authorized device actions and track execution results."
+      },
+      {
+        "layer": "Realtime & records",
+        "technology": "WebSockets + PostgreSQL + object storage",
+        "purpose": "Stream device state and persist run history and artifacts."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + device-lab integration tests",
+        "purpose": "Test disconnected devices, queue retries, and failed workflow steps."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "42": {
+    "observed": "A shoppable video feed, product details, mobile discovery, and basket screens.",
+    "overview": "TrendBuy Social Commerce brings together shoppable video, product tagging, and commerce checkout.",
+    "requirements": [
+      "Shoppable video",
+      "Product tagging",
+      "Commerce checkout"
+    ],
+    "approach": "Start by defining shoppable video and its content/data model. Prototype product tagging, implement commerce checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Experience",
+        "technology": "Next.js + TypeScript + Mux player",
+        "purpose": "Combine mobile-friendly video discovery with linked product detail."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify Storefront API + hosted checkout",
+        "purpose": "Manage product variants, inventory, and shopping checkout."
+      },
+      {
+        "layer": "Content",
+        "technology": "PostgreSQL + Mux assets",
+        "purpose": "Associate products with video posts and creator-owned content."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright",
+        "purpose": "Test video controls, product deep links, stock changes, and checkout."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "43": {
+    "observed": "Auction listings, countdowns, a live bid panel, product details, and mobile bid views.",
+    "overview": "SubastaLive · Real-Time Auction Platform brings together concurrent bidding, auction closing, and bid history.",
+    "requirements": [
+      "Concurrent bidding",
+      "Auction closing",
+      "Bid history"
+    ],
+    "approach": "Define bid increments, auction-close rules, and payment states; implement transactional bid acceptance with server-authoritative time. Add realtime updates and verify simultaneous bids, reconnects, and settlement retries.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "Next.js + TypeScript + WebSocket client",
+        "purpose": "Render live bids, countdowns, account views, and auction listings."
+      },
+      {
+        "layer": "Auction engine",
+        "technology": "NestJS + PostgreSQL transactions + Redis",
+        "purpose": "Accept bids atomically and enforce server-authoritative closing times."
+      },
+      {
+        "layer": "Jobs & payments",
+        "technology": "BullMQ + payment-provider API",
+        "purpose": "Finalize auctions reliably and handle settlement with idempotent callbacks."
+      },
+      {
+        "layer": "Verification",
+        "technology": "k6 + integration tests + Playwright",
+        "purpose": "Test competing bids, last-second updates, reconnects, and closing races."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "44": {
+    "observed": "AI-assisted creative-services pages with packages, examples, quote requests, and client/admin workspaces.",
+    "overview": "AICreatePro Digital Services brings together quote intake, creative production jobs, and delivery tracking.",
+    "requirements": [
+      "Quote intake",
+      "Creative production jobs",
+      "Delivery tracking"
+    ],
+    "approach": "Start by defining quote intake and its content/data model. Prototype creative production jobs, implement delivery tracking, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront & workspace",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Present services, quotes, order status, and client deliverables."
+      },
+      {
+        "layer": "Production backend",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Track briefs, payments, production jobs, and asynchronous delivery."
+      },
+      {
+        "layer": "Generation & assets",
+        "technology": "Provider LLM/image APIs + S3-compatible storage",
+        "purpose": "Run approved creative generation tasks and store versioned outputs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + provider contract tests",
+        "purpose": "Test purchase/brief flows, provider failures, and delivery permissions."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "45": {
+    "observed": "Digital-services catalog, AI tool references, pricing plans, order workflow, and customer screens.",
+    "overview": "Impulso IA · Servicios Digitales con Inteligencia Artificial brings together service ordering, ai job orchestration, and customer billing.",
+    "requirements": [
+      "Service ordering",
+      "AI job orchestration",
+      "Customer billing"
+    ],
+    "approach": "Start by defining service ordering and its content/data model. Prototype ai job orchestration, implement customer billing, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront & workspace",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Present services, quotes, order status, and client deliverables."
+      },
+      {
+        "layer": "Production backend",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Track briefs, payments, production jobs, and asynchronous delivery."
+      },
+      {
+        "layer": "Generation & assets",
+        "technology": "Provider LLM/image APIs + S3-compatible storage",
+        "purpose": "Run approved creative generation tasks and store versioned outputs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + provider contract tests",
+        "purpose": "Test purchase/brief flows, provider failures, and delivery permissions."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "46": {
+    "observed": "A native Android browser shell with a splash screen, menu, embedded website, and Play Store delivery checklist.",
+    "overview": "Android Browser App brings together webview navigation, download handling, and android app release.",
+    "requirements": [
+      "WebView navigation",
+      "Download handling",
+      "Android app release"
+    ],
+    "approach": "Configure the native Android shell, implement the website navigation and download behavior, and handle permission and lifecycle events. Test on real devices and prepare a signed release that meets current store requirements.",
+    "stack": [
+      {
+        "layer": "Native shell",
+        "technology": "Kotlin + Android SDK + AndroidX WebKit",
+        "purpose": "Implement the WebView shell, navigation, downloads, and lifecycle handling."
+      },
+      {
+        "layer": "Project tooling",
+        "technology": "Android Studio + Gradle",
+        "purpose": "Build signed Android App Bundles and manage platform dependencies."
+      },
+      {
+        "layer": "Verification & release",
+        "technology": "Espresso + device tests + Play Console",
+        "purpose": "Test navigation, permissions, offline/errors, and release requirements."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "47": {
+    "observed": "Mobile task and project screens with collaborative conversations, reporting panels, and service navigation.",
+    "overview": "WorkPro · Simplifica, Colabora, Crece brings together shared workspaces, task state, and team messaging.",
+    "requirements": [
+      "Shared workspaces",
+      "Task state",
+      "Team messaging"
+    ],
+    "approach": "Start by defining shared workspaces and its content/data model. Prototype task state, implement team messaging, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Clients",
+        "technology": "React Native + TypeScript + React web admin",
+        "purpose": "Build mobile task flows and a shared project workspace."
+      },
+      {
+        "layer": "Collaboration backend",
+        "technology": "NestJS + WebSockets + PostgreSQL + Redis",
+        "purpose": "Maintain tasks, members, notifications, and synchronized discussions."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + integration tests",
+        "purpose": "Test membership permissions, concurrent updates, and offline reconnects."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "48": {
+    "observed": "A field-service sequence with work orders, customer signatures, receipt capture, submission, and back-office integration.",
+    "overview": "Field Service Workflow Integration brings together offline work orders, signature capture, and erp synchronization.",
+    "requirements": [
+      "Offline work orders",
+      "Signature capture",
+      "ERP synchronization"
+    ],
+    "approach": "Map the work-order lifecycle, prototype offline forms and signatures, and implement durable local drafts. Connect the ERP synchronization adapter and test conflict resolution, repeated submissions, and attachment recovery.",
+    "stack": [
+      {
+        "layer": "Mobile",
+        "technology": "React Native + SQLite + signature canvas",
+        "purpose": "Capture work orders, photos, and signatures with offline drafts."
+      },
+      {
+        "layer": "Sync service",
+        "technology": "NestJS + PostgreSQL + S3-compatible storage",
+        "purpose": "Synchronize jobs and attachments with conflict and retry handling."
+      },
+      {
+        "layer": "ERP integration",
+        "technology": "ERP REST/OData connector + queued jobs",
+        "purpose": "Map submitted field records into the actual back-office system."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + integration fixtures",
+        "purpose": "Check offline completion, repeated syncs, and attachment integrity."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "49": {
+    "observed": "A patient-access dashboard with consultation and document-validation stages, account views, and reporting.",
+    "overview": "Cuidar Medical Cannabis UX brings together patient intake, document validation, and case tracking.",
+    "requirements": [
+      "Patient intake",
+      "Document validation",
+      "Case tracking"
+    ],
+    "approach": "Map intake, document review, and staff decisions, then implement scoped records and encrypted document storage. Verify consent, upload validation, authorization boundaries, and complete case-state transitions.",
+    "stack": [
+      {
+        "layer": "Portal",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Build patient intake, document upload, and staff review interfaces."
+      },
+      {
+        "layer": "Backend",
+        "technology": "FastAPI + PostgreSQL + encrypted object storage",
+        "purpose": "Persist case state and controlled-access documents."
+      },
+      {
+        "layer": "Access & validation",
+        "technology": "OIDC + role-based access + audit logging",
+        "purpose": "Restrict sensitive records and record staff validation decisions."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + Playwright + authorization tests",
+        "purpose": "Check document lifecycle, permissions, and invalid intake states."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "50": {
+    "observed": "A Japanese manufacturing site with industrial imagery, technology summaries, product/service blocks, and mobile views.",
+    "overview": "AVC Futuristic Manufacturing brings together industrial content, product imagery, and technical inquiries.",
+    "requirements": [
+      "Industrial content",
+      "Product imagery",
+      "Technical inquiries"
+    ],
+    "approach": "Start by defining industrial content and its content/data model. Prototype product imagery, implement technical inquiries, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Fast, responsive service and project pages."
+      },
+      {
+        "layer": "Content",
+        "technology": "Sanity CMS + image optimization",
+        "purpose": "Manage project imagery, service content, and localized copy."
+      },
+      {
+        "layer": "Forms",
+        "technology": "Server-side form endpoint + transactional email",
+        "purpose": "Validate inquiries and deliver them to a configured team inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check navigation, forms, responsive layouts, and accessibility."
+      },
+      {
+        "layer": "Optional visual enhancement",
+        "technology": "Three.js + glTF product models",
+        "purpose": "Use only if interactive product models are required; imagery alone needs no 3D engine."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "52": {
+    "observed": "An electronics catalog with product pages, mobile shopping, and order-management dashboard views.",
+    "overview": "TechStore E-Commerce brings together electronics catalog, variant selection, and order administration.",
+    "requirements": [
+      "Electronics catalog",
+      "Variant selection",
+      "Order administration"
+    ],
+    "approach": "Start by defining electronics catalog and its content/data model. Prototype variant selection, implement order administration, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "53": {
+    "observed": "An explicit WooCommerce-to-Contasimple order, delivery-note, and consolidated-invoice workflow.",
+    "overview": "WooCommerce–Contasimple · Automatización de Pedidos y Facturación brings together woocommerce webhooks, delivery-note creation, and monthly invoicing.",
+    "requirements": [
+      "WooCommerce webhooks",
+      "Delivery-note creation",
+      "Monthly invoicing"
+    ],
+    "approach": "Map WooCommerce order and tax fields to the accounting API, implement idempotent delivery-note synchronization, and define invoice grouping rules. Exercise cancellations, retries, and totals in an API sandbox.",
+    "stack": [
+      {
+        "layer": "Commerce",
+        "technology": "WordPress + WooCommerce + PHP",
+        "purpose": "Read order events through the supported WooCommerce hooks/API."
+      },
+      {
+        "layer": "Accounting integration",
+        "technology": "Contasimple API + signed webhooks + scheduled worker",
+        "purpose": "Create delivery notes and consolidated invoices using supported endpoints."
+      },
+      {
+        "layer": "Reliability",
+        "technology": "MySQL + Action Scheduler + idempotency records",
+        "purpose": "Persist synchronization state, batch schedules, and retriable failures."
+      },
+      {
+        "layer": "Verification",
+        "technology": "PHPUnit + API sandbox contract tests",
+        "purpose": "Check invoice grouping, tax totals, cancellations, and duplicate events."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "54": {
+    "observed": "A minimalist electronics storefront with category navigation, product photography, and mobile pages.",
+    "overview": "NEXA Modern Tech Storefront brings together product catalog, search and filtering, and checkout.",
+    "requirements": [
+      "Product catalog",
+      "Search and filtering",
+      "Checkout"
+    ],
+    "approach": "Start by defining product catalog and its content/data model. Prototype search and filtering, implement checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "55": {
+    "observed": "WordPress plugin views, troubleshooting stages, compatibility checks, and a list of supported plugin families.",
+    "overview": "Diagnóstico y Solución de Plugins WordPress brings together plugin compatibility, staging reproduction, and regression checks.",
+    "requirements": [
+      "Plugin compatibility",
+      "Staging reproduction",
+      "Regression checks"
+    ],
+    "approach": "Create a recoverable staging copy of the actual site, reproduce the conflict, and isolate the responsible plugin/theme combination. Apply a supported fix and verify the affected workflows before deployment.",
+    "stack": [
+      {
+        "layer": "Runtime",
+        "technology": "WordPress + PHP + MySQL/MariaDB",
+        "purpose": "Reproduce the actual plugin/theme environment on staging."
+      },
+      {
+        "layer": "Diagnostics",
+        "technology": "WP-CLI + PHP error logs + Query Monitor",
+        "purpose": "Isolate plugin conflicts and inspect errors and slow requests."
+      },
+      {
+        "layer": "Verification",
+        "technology": "PHPUnit + Playwright + backup/restore tooling",
+        "purpose": "Test repaired workflows against a recoverable staging copy before release."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "56": {
+    "observed": "WhatsApp barbershop booking messages with service selection, staff choice, available times, and confirmation.",
+    "overview": "WhatsApp Chatbot for Barbershop Bookings brings together service selection, appointment availability, and booking confirmation.",
+    "requirements": [
+      "Service selection",
+      "Appointment availability",
+      "Booking confirmation"
+    ],
+    "approach": "Start by defining service selection and its content/data model. Prototype appointment availability, implement booking confirmation, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Messaging",
+        "technology": "WhatsApp Cloud API",
+        "purpose": "Drive service, staff, time-selection, and confirmation conversations."
+      },
+      {
+        "layer": "Scheduling",
+        "technology": "NestJS + PostgreSQL + transactional booking constraints",
+        "purpose": "Reserve available slots atomically and prevent double booking."
+      },
+      {
+        "layer": "Reminders & admin",
+        "technology": "BullMQ + React/TypeScript",
+        "purpose": "Send confirmations/reminders and manage services and staff calendars."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Integration tests + conversation fixtures",
+        "purpose": "Test timezones, rescheduling, competing reservations, and retries."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "57": {
+    "observed": "Wine, gift, and calendar packaging mockups with dielines, measurements, folds, and cut-line notation.",
+    "overview": "Packaging Dielines & Mockups brings together dieline geometry, print separation, and physical proof review.",
+    "requirements": [
+      "Dieline geometry",
+      "Print separation",
+      "Physical proof review"
+    ],
+    "approach": "Confirm physical product dimensions, draw cut and fold layers at real scale, and apply artwork with the correct bleed. Produce a physical proof and run print preflight before releasing production files.",
+    "stack": [
+      {
+        "layer": "Structural artwork",
+        "technology": "Adobe Illustrator + dimensioned dieline templates",
+        "purpose": "Define separate cut, crease, bleed, and artwork layers at real scale."
+      },
+      {
+        "layer": "Print validation",
+        "technology": "Adobe Acrobat Pro preflight + physical proof",
+        "purpose": "Check dimensions, spot colors, overprint, bleed, and fold behavior."
+      },
+      {
+        "layer": "Optional visualization",
+        "technology": "Blender",
+        "purpose": "Render packaging mockups when editable 3D previews are required."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "58": {
+    "observed": "Documentary scene examples and a CapCut-branded nonlinear editing timeline with titles and audio layers.",
+    "overview": "Cinematic Documentary Editing Portfolio brings together documentary edit, caption and title tracks, and audio finishing.",
+    "requirements": [
+      "Documentary edit",
+      "Caption and title tracks",
+      "Audio finishing"
+    ],
+    "approach": "Structure the documentary narrative, organize source footage and voice-over in CapCut, then build the layered timeline shown. Refine pacing, captions, color, and sound before checking the final export.",
+    "stack": [
+      {
+        "layer": "Timeline editing",
+        "technology": "CapCut Desktop",
+        "purpose": "Reproduce the layered documentary workflow explicitly depicted in the artwork."
+      },
+      {
+        "layer": "Audio & graphics",
+        "technology": "CapCut audio/caption tools + Photoshop",
+        "purpose": "Prepare narration, subtitles, thumbnail graphics, and image composites."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Licensed assets + agreed video export presets",
+        "purpose": "Deliver captioned masters with checked aspect ratio, frame rate, and audio levels."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "59": {
+    "observed": "A technology storefront showing product discovery, mobile shopping, and a proposed operational flow.",
+    "overview": "TechStore E-commerce brings together product catalog, mobile checkout, and order notifications.",
+    "requirements": [
+      "Product catalog",
+      "Mobile checkout",
+      "Order notifications"
+    ],
+    "approach": "Start by defining product catalog and its content/data model. Prototype mobile checkout, implement order notifications, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "60": {
+    "observed": "A self-guided workbook with cover design, interior page spreads, reflection exercises, and print mockups.",
+    "overview": "Un Nuevo Comienzo · Workbook Editorial brings together long-form layout, exercise templates, and print-ready pdf.",
+    "requirements": [
+      "Long-form layout",
+      "Exercise templates",
+      "Print-ready PDF"
+    ],
+    "approach": "Outline the reading and exercise sequence, build master pages and paragraph styles, then flow the reviewed copy into the document. Check pagination, contrast, margins, and a printed proof before exporting.",
+    "stack": [
+      {
+        "layer": "Layout",
+        "technology": "Adobe InDesign",
+        "purpose": "Build master pages, paragraph styles, exercise layouts, and long-form pagination."
+      },
+      {
+        "layer": "Artwork",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Prepare cover imagery, supporting graphics, and illustrations."
+      },
+      {
+        "layer": "Output & QA",
+        "technology": "Acrobat Pro preflight + print PDF",
+        "purpose": "Check font embedding, margins, bleed, legibility, and press specifications."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "61": {
+    "observed": "A wellbeing app concept with score summaries, activity charts, sleep tracking, and smartwatch views.",
+    "overview": "HombreVital · Tu Bienestar en Una App brings together health data sync, wellbeing summaries, and progress tracking.",
+    "requirements": [
+      "Health data sync",
+      "Wellbeing summaries",
+      "Progress tracking"
+    ],
+    "approach": "Define supported tracking data and user consent, prototype the mobile views, and integrate the relevant device health APIs. Test synchronization, unit conversion, access revocation, subscriptions, and non-diagnostic assistant behavior.",
+    "stack": [
+      {
+        "layer": "Mobile & wearable",
+        "technology": "React Native + native HealthKit/Health Connect bridges",
+        "purpose": "Build tracking views and permission-based platform health integrations."
+      },
+      {
+        "layer": "Backend",
+        "technology": "FastAPI + PostgreSQL + encrypted storage",
+        "purpose": "Persist user-authorized activity and wellness records with controlled access."
+      },
+      {
+        "layer": "Assistant & access",
+        "technology": "LLM API with reviewed content + StoreKit/Play Billing",
+        "purpose": "Support non-diagnostic guidance and app-store subscription access where shown."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + native-device integration tests",
+        "purpose": "Check consent, sync gaps, unit conversions, subscriptions, and offline states."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "62": {
+    "observed": "A corporate presentation system using blue branding, service diagrams, outcome charts, and team slides.",
+    "overview": "Corporate Blue Business Presentation Grid brings together slide master system, business diagrams, and presentation export.",
+    "requirements": [
+      "Slide master system",
+      "Business diagrams",
+      "Presentation export"
+    ],
+    "approach": "Develop a reusable slide-master system, translate business information into editable diagrams and charts, and refine the story order. Review the presentation on the intended display and export a portable PDF.",
+    "stack": [
+      {
+        "layer": "Slides",
+        "technology": "PowerPoint + Figma",
+        "purpose": "Create reusable master slides, business layouts, and visual hierarchy."
+      },
+      {
+        "layer": "Charts & assets",
+        "technology": "Excel + Illustrator",
+        "purpose": "Prepare editable charts, diagrams, and vector brand assets."
+      },
+      {
+        "layer": "Verification",
+        "technology": "PDF export + presentation-device review",
+        "purpose": "Check font availability, editable data, aspect ratios, and projection legibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "63": {
+    "observed": "A multi-module business dashboard with revenue summaries, product listings, orders, and AI integration entry points.",
+    "overview": "Digideax Africa Pro brings together business modules, orders and products, and operational reporting.",
+    "requirements": [
+      "Business modules",
+      "Orders and products",
+      "Operational reporting"
+    ],
+    "approach": "Start by defining business modules and its content/data model. Prototype orders and products, implement operational reporting, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript + TanStack Table + Apache ECharts",
+        "purpose": "Build product, order, customer, and reporting workspaces."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL",
+        "purpose": "Implement validated business APIs and relational records."
+      },
+      {
+        "layer": "Access & jobs",
+        "technology": "OIDC + role-based access + Redis/BullMQ",
+        "purpose": "Scope modules by role and process background operations."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright + API tests",
+        "purpose": "Check CRUD flows, permissions, report totals, and background-job failures."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "64": {
+    "observed": "A Scandinavian furniture storefront with room photography, featured products, and mobile catalog browsing.",
+    "overview": "Espacio Nórdico · Scandinavian Furniture brings together furniture catalog, product collections, and delivery options.",
+    "requirements": [
+      "Furniture catalog",
+      "Product collections",
+      "Delivery options"
+    ],
+    "approach": "Start by defining furniture catalog and its content/data model. Prototype product collections, implement delivery options, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "65": {
+    "observed": "A luxury resale storefront with categorized accessories, item details, photography, and mobile layouts.",
+    "overview": "Luxury Vintage Ecommerce brings together resale inventory, unique-item stock, and checkout.",
+    "requirements": [
+      "Resale inventory",
+      "Unique-item stock",
+      "Checkout"
+    ],
+    "approach": "Start by defining resale inventory and its content/data model. Prototype unique-item stock, implement checkout, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "66": {
+    "observed": "Puffer jacket and shorts technical flats, material details, colorways, size tables, and measurement annotations.",
+    "overview": "Puffer Jacket and Shorts Spec Sheet brings together garment flats, grading tables, and technical pack export.",
+    "requirements": [
+      "Garment flats",
+      "Grading tables",
+      "Technical pack export"
+    ],
+    "approach": "Confirm garment construction and materials, draw technical flats, and define measurement points and size grading. Review the complete technical pack with the manufacturer and validate a physical sample.",
+    "stack": [
+      {
+        "layer": "Technical design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Draw garment flats, construction callouts, and colorways."
+      },
+      {
+        "layer": "Specification data",
+        "technology": "Excel/Sheets + PDF technical pack",
+        "purpose": "Maintain measurements, size grading, materials, and bill-of-material tables."
+      },
+      {
+        "layer": "Optional sampling",
+        "technology": "CLO 3D + physical sample review",
+        "purpose": "Evaluate digital fit when needed and verify final construction against samples."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "67": {
+    "observed": "A fitness advertisement storyboard showing a problem/solution arc, product scenes, captions, and social formats.",
+    "overview": "Storyboard de Anuncio Fitness en Español brings together shot planning, caption animation, and vertical video editing.",
+    "requirements": [
+      "Shot planning",
+      "Caption animation",
+      "Vertical video editing"
+    ],
+    "approach": "Translate the campaign into a timed shot list, plan the problem-to-solution arc, and compose product and caption frames. Edit the approved sequence and verify pacing and mobile readability.",
+    "stack": [
+      {
+        "layer": "Preproduction",
+        "technology": "Figma + Photoshop",
+        "purpose": "Plan scene order, timing, product shots, captions, and visual references."
+      },
+      {
+        "layer": "Edit & motion",
+        "technology": "CapCut Desktop + After Effects",
+        "purpose": "Assemble social cuts and animate text or graphic overlays."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Licensed audio + social video export presets",
+        "purpose": "Check captions, safe areas, pacing, and mobile aspect ratios."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "68": {
+    "observed": "A NEXA electronics storefront paired with an explicit Shopify services panel and mobile product pages.",
+    "overview": "Nexa E-commerce Store brings together shopify theme sections, product variants, and checkout integration.",
+    "requirements": [
+      "Shopify theme sections",
+      "Product variants",
+      "Checkout integration"
+    ],
+    "approach": "Start by defining shopify theme sections and its content/data model. Prototype product variants, implement checkout integration, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "69": {
+    "observed": "A jewelry identity board with monogram construction, serif typography, earthy swatches, packaging, and social applications.",
+    "overview": "Lumière Joias Luxury Brand Board brings together logo system, packaging artwork, and brand usage guide.",
+    "requirements": [
+      "Logo system",
+      "Packaging artwork",
+      "Brand usage guide"
+    ],
+    "approach": "Explore logo concepts, establish typography and color rules, then extend the selected identity into the applications shown. Deliver vector masters and a reviewed usage guide.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Create scalable logos, typography layouts, and identity assets."
+      },
+      {
+        "layer": "Applications",
+        "technology": "Figma + Adobe Photoshop",
+        "purpose": "Explore digital components and photographic application mockups."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "SVG/PDF exports + color-managed brand guide",
+        "purpose": "Package reusable artwork and document color, spacing, and type rules."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "70": {
+    "observed": "An AI study app with question entry, photographed equations, worked answers, subject selection, and mobile screens.",
+    "overview": "StudyAI · Tu Aliado Inteligente brings together image question input, tutoring responses, and study history.",
+    "requirements": [
+      "Image question input",
+      "Tutoring responses",
+      "Study history"
+    ],
+    "approach": "Start by defining image question input and its content/data model. Prototype tutoring responses, implement study history, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Mobile",
+        "technology": "React Native + TypeScript + camera/image picker",
+        "purpose": "Capture questions and provide subject-based tutoring screens."
+      },
+      {
+        "layer": "AI service",
+        "technology": "FastAPI + multimodal LLM API + verified math tooling",
+        "purpose": "Read submitted questions, produce explanations, and check numeric work."
+      },
+      {
+        "layer": "Persistence",
+        "technology": "PostgreSQL + encrypted object storage + job queue",
+        "purpose": "Store opted-in study sessions and process image inputs asynchronously."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + evaluation question set + Maestro",
+        "purpose": "Check OCR errors, answer quality, upload failures, and study-history access."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "71": {
+    "observed": "An HR/careers landing page with vacancy discovery, candidate journeys, company content, and mobile layouts.",
+    "overview": "Talento+ HR Landing Page brings together vacancy publishing, candidate applications, and company storytelling.",
+    "requirements": [
+      "Vacancy publishing",
+      "Candidate applications",
+      "Company storytelling"
+    ],
+    "approach": "Start by defining vacancy publishing and its content/data model. Prototype candidate applications, implement company storytelling, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Next.js + TypeScript + CMS",
+        "purpose": "Publish role listings, team/culture pages, and responsive candidate journeys."
+      },
+      {
+        "layer": "Applications",
+        "technology": "ATS API integration + server-side form validation",
+        "purpose": "Submit applications and track role availability without duplicating ATS data."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Test vacancy filters, application errors, and keyboard accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "72": {
+    "observed": "A pastel Japanese eyewear store proposal with page-layout diagrams, product modules, and responsive wireframes.",
+    "overview": "Pastel Eyewear Store Wireframe Proposal brings together information architecture, component wireframes, and interactive prototype.",
+    "requirements": [
+      "Information architecture",
+      "Component wireframes",
+      "Interactive prototype"
+    ],
+    "approach": "Map storefront navigation and shopping tasks, build responsive component wireframes, and connect the primary screens into a prototype. Validate product discovery and hand off annotated layouts before production development.",
+    "stack": [
+      {
+        "layer": "Prototyping",
+        "technology": "Figma + Auto Layout + component variants",
+        "purpose": "Model page hierarchy, responsive states, and reusable storefront modules."
+      },
+      {
+        "layer": "Handoff",
+        "technology": "Design tokens + annotated prototype",
+        "purpose": "Document interaction states, spacing, type, and implementation requirements."
+      },
+      {
+        "layer": "Validation",
+        "technology": "Usability sessions + prototype review",
+        "purpose": "Check navigation and product-discovery tasks before choosing a production stack."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "73": {
+    "observed": "Paired gym-brand moodboards with photography, campaign headlines, social icons, and branded promotional layouts.",
+    "overview": "Dual Gym Brands Fitness Moodboard brings together brand-specific templates, photo direction, and social campaign assets.",
+    "requirements": [
+      "Brand-specific templates",
+      "Photo direction",
+      "Social campaign assets"
+    ],
+    "approach": "Define each campaign’s message and visual rules, create a reusable layout family, and composite the supplied photography. Review legibility and safe areas before exporting each social format.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Create campaign composites, vector graphics, and typography systems."
+      },
+      {
+        "layer": "Templates",
+        "technology": "Figma",
+        "purpose": "Maintain reusable post, story, cover, and sticker layouts."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Platform-specific export presets",
+        "purpose": "Prepare consistent aspect ratios, safe areas, and optimized image assets."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "74": {
+    "observed": "A SPUNTA identity system showing logo variants, type, earthy colors, signage, packaging, and web applications.",
+    "overview": "SPUNTA Brand Identity Moodboard (1) brings together logo variants, brand specifications, and touchpoint mockups.",
+    "requirements": [
+      "Logo variants",
+      "Brand specifications",
+      "Touchpoint mockups"
+    ],
+    "approach": "Explore logo concepts, establish typography and color rules, then extend the selected identity into the applications shown. Deliver vector masters and a reviewed usage guide.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Create scalable logos, typography layouts, and identity assets."
+      },
+      {
+        "layer": "Applications",
+        "technology": "Figma + Adobe Photoshop",
+        "purpose": "Explore digital components and photographic application mockups."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "SVG/PDF exports + color-managed brand guide",
+        "purpose": "Package reusable artwork and document color, spacing, and type rules."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "77": {
+    "observed": "A video-services landing page referencing Veo 3 and CapCut with examples, process steps, and service packages.",
+    "overview": "ScaleVideo Studio · E-commerce Video Landing Page brings together ai video generation, timeline editing, and service presentation.",
+    "requirements": [
+      "AI video generation",
+      "Timeline editing",
+      "Service presentation"
+    ],
+    "approach": "Storyboard the requested service examples, generate and review approved shots, and refine them in the editing timeline. Publish optimized examples on the service site and verify video playback and inquiry flows.",
+    "stack": [
+      {
+        "layer": "Generation",
+        "technology": "Google Veo API/Vertex AI",
+        "purpose": "Generate licensed/authorized video shots from reviewed prompts and references."
+      },
+      {
+        "layer": "Editing",
+        "technology": "CapCut Desktop",
+        "purpose": "Assemble generated and original footage into polished service examples."
+      },
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + Mux",
+        "purpose": "Present packages, video examples, and an inquiry workflow."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shot review + Playwright",
+        "purpose": "Check continuity, audio/captions, media loading, and responsive presentation."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "78": {
+    "observed": "A rewards marketplace with product redemption, a points dashboard, transaction tables, and mobile account views.",
+    "overview": "El Código Loyalty Platform brings together points ledger, reward redemption, and merchant administration.",
+    "requirements": [
+      "Points ledger",
+      "Reward redemption",
+      "Merchant administration"
+    ],
+    "approach": "Define point-earning, expiry, refund, and redemption rules; implement an append-only points ledger and atomic redemption. Integrate purchase events and test duplicates, balance reversals, and concurrent requests.",
+    "stack": [
+      {
+        "layer": "Clients",
+        "technology": "Next.js + TypeScript",
+        "purpose": "Build rewards browsing, member balances, and merchant administration."
+      },
+      {
+        "layer": "Ledger",
+        "technology": "NestJS + PostgreSQL transactions",
+        "purpose": "Record immutable points events and atomically reserve redemptions."
+      },
+      {
+        "layer": "Integration & jobs",
+        "technology": "Merchant APIs + signed webhooks + BullMQ",
+        "purpose": "Sync qualifying purchases and deliver fulfillment/expiry events."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Integration tests + Playwright",
+        "purpose": "Test duplicate purchases, refunds, insufficient points, and concurrent redemption."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "79": {
+    "observed": "A capsule-prize storefront with a prize machine visual, purchase calls to action, product lists, and administrative screens.",
+    "overview": "Pastel GachaLand brings together prize inventory, auditable draw logic, and order fulfillment.",
+    "requirements": [
+      "Prize inventory",
+      "Auditable draw logic",
+      "Order fulfillment"
+    ],
+    "approach": "Specify prize inventory, permitted purchase rules, and published probabilities; implement server-side draws with auditable randomness and transactional stock. Validate probability logic, concurrency, payment callbacks, and fulfillment.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "Next.js + TypeScript + CSS animations",
+        "purpose": "Build prize browsing, reveal animations, and administrative screens."
+      },
+      {
+        "layer": "Draw engine",
+        "technology": "NestJS + cryptographic RNG + PostgreSQL transactions",
+        "purpose": "Implement auditable draws, published rules, and atomic prize inventory."
+      },
+      {
+        "layer": "Orders",
+        "technology": "Payment-provider API + queued fulfillment",
+        "purpose": "Connect permitted purchases and fulfillment with idempotent events."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Distribution/invariant tests + concurrency tests",
+        "purpose": "Check odds implementation, stock exhaustion, transaction rollback, and duplicate callbacks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "80": {
+    "observed": "A Spanish QA service infographic with web/mobile previews, test categories, bug-report stages, and device coverage.",
+    "overview": "Infografía de pruebas QA web y móviles brings together functional test suites, mobile coverage, and defect tracking.",
+    "requirements": [
+      "Functional test suites",
+      "Mobile coverage",
+      "Defect tracking"
+    ],
+    "approach": "Define the target browsers/devices and critical user journeys, convert them into repeatable functional and API checks, and collect reproducible defects with evidence. Retest fixes and publish the results with clear coverage limits.",
+    "stack": [
+      {
+        "layer": "Web tests",
+        "technology": "Playwright + axe-core",
+        "purpose": "Automate functional, responsive, keyboard, and accessibility checks."
+      },
+      {
+        "layer": "Mobile tests",
+        "technology": "Appium + Android/iOS device matrix",
+        "purpose": "Exercise native mobile flows and device-specific behavior."
+      },
+      {
+        "layer": "API & reporting",
+        "technology": "Postman/Newman + issue tracker + CI artifacts",
+        "purpose": "Validate API contracts and attach reproducible steps, logs, and screenshots."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "81": {
+    "observed": "A WhatsApp CRM with customer conversations, contact records, pipeline stages, and messaging activity.",
+    "overview": "WhatsApp AI CRM brings together contact timeline, messaging inbox, and sales pipeline.",
+    "requirements": [
+      "Contact timeline",
+      "Messaging inbox",
+      "Sales pipeline"
+    ],
+    "approach": "Start by defining contact timeline and its content/data model. Prototype messaging inbox, implement sales pipeline, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Messaging",
+        "technology": "WhatsApp Business Platform Cloud API + signed webhooks",
+        "purpose": "Receive inbound messages and deliver approved outbound messages."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL + Redis/BullMQ",
+        "purpose": "Persist contacts, conversation state, and retryable message jobs."
+      },
+      {
+        "layer": "Assistant & interface",
+        "technology": "LLM API with retrieval + React/TypeScript",
+        "purpose": "Ground support responses in approved content and expose a human inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright + webhook replay fixtures",
+        "purpose": "Test conversation transitions, retries, delivery failures, and handoff."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "83": {
+    "observed": "A social-design collection with cover banners, profile marks, promotional posts, and custom sticker treatments.",
+    "overview": "Vibrant Social Media Design brings together social asset templates, logo variants, and sticker export.",
+    "requirements": [
+      "Social asset templates",
+      "Logo variants",
+      "Sticker export"
+    ],
+    "approach": "Define each campaign’s message and visual rules, create a reusable layout family, and composite the supplied photography. Review legibility and safe areas before exporting each social format.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Create campaign composites, vector graphics, and typography systems."
+      },
+      {
+        "layer": "Templates",
+        "technology": "Figma",
+        "purpose": "Maintain reusable post, story, cover, and sticker layouts."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Platform-specific export presets",
+        "purpose": "Prepare consistent aspect ratios, safe areas, and optimized image assets."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "84": {
+    "observed": "A health app with nutrition, exercise, AI chat, subscription screens, and wearable-device integration visuals.",
+    "overview": "Health and Fitness App brings together nutrition logging, wearable integration, and subscription access.",
+    "requirements": [
+      "Nutrition logging",
+      "Wearable integration",
+      "Subscription access"
+    ],
+    "approach": "Define supported tracking data and user consent, prototype the mobile views, and integrate the relevant device health APIs. Test synchronization, unit conversion, access revocation, subscriptions, and non-diagnostic assistant behavior.",
+    "stack": [
+      {
+        "layer": "Mobile & wearable",
+        "technology": "React Native + native HealthKit/Health Connect bridges",
+        "purpose": "Build tracking views and permission-based platform health integrations."
+      },
+      {
+        "layer": "Backend",
+        "technology": "FastAPI + PostgreSQL + encrypted storage",
+        "purpose": "Persist user-authorized activity and wellness records with controlled access."
+      },
+      {
+        "layer": "Assistant & access",
+        "technology": "LLM API with reviewed content + StoreKit/Play Billing",
+        "purpose": "Support non-diagnostic guidance and app-store subscription access where shown."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + native-device integration tests",
+        "purpose": "Check consent, sync gaps, unit conversions, subscriptions, and offline states."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "86": {
+    "observed": "Heavy-equipment rental summaries, utilization graphs, revenue charts, a machine table, and a location map.",
+    "overview": "Rental Pro Equipment Management brings together equipment availability, rental agreements, and maintenance schedules.",
+    "requirements": [
+      "Equipment availability",
+      "Rental agreements",
+      "Maintenance schedules"
+    ],
+    "approach": "Start by defining equipment availability and its content/data model. Prototype rental agreements, implement maintenance schedules, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Dashboard",
+        "technology": "React + TypeScript + Apache ECharts + Mapbox",
+        "purpose": "Present rental utilization, revenue, equipment state, and asset locations."
+      },
+      {
+        "layer": "Rental backend",
+        "technology": "NestJS + PostgreSQL/PostGIS",
+        "purpose": "Track equipment, rental periods, agreements, and maintenance events."
+      },
+      {
+        "layer": "Operations",
+        "technology": "Redis/BullMQ + PDF generation + object storage",
+        "purpose": "Schedule maintenance reminders and generate rental documents."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Integration tests + Playwright",
+        "purpose": "Check overlapping reservations, availability, utilization totals, and maintenance exclusions."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "87": {
+    "observed": "A print-services brand system showing a multicolor logo, stationery, vehicle graphics, brochures, and production applications.",
+    "overview": "PrintPlace Branding Identity Board brings together identity system, print color management, and large-format artwork.",
+    "requirements": [
+      "Identity system",
+      "Print color management",
+      "Large-format artwork"
+    ],
+    "approach": "Establish the identity, prepare vector and photographic applications, and adapt layouts for each physical format. Use the printer’s color profiles, check production scale, and approve physical proofs.",
+    "stack": [
+      {
+        "layer": "Identity & artwork",
+        "technology": "Adobe Illustrator + Photoshop",
+        "purpose": "Create logos, vector layouts, print composites, and vehicle applications."
+      },
+      {
+        "layer": "Production",
+        "technology": "InDesign + Acrobat Pro preflight",
+        "purpose": "Prepare brochures and print-ready files with bleed and embedded fonts."
+      },
+      {
+        "layer": "Color & output",
+        "technology": "ICC profiles + printer RIP/physical proofs",
+        "purpose": "Validate CMYK/spot colors, scale, substrate, and production output."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "88": {
+    "observed": "An AI tutor with photographed math input, conversational explanations, subject tools, and mobile layouts.",
+    "overview": "EstudiaAI · Aprende Sin Límites-2 brings together ocr-assisted questions, tutoring dialogue, and saved study sessions.",
+    "requirements": [
+      "OCR-assisted questions",
+      "Tutoring dialogue",
+      "Saved study sessions"
+    ],
+    "approach": "Start by defining ocr-assisted questions and its content/data model. Prototype tutoring dialogue, implement saved study sessions, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Mobile",
+        "technology": "React Native + TypeScript + camera/image picker",
+        "purpose": "Capture questions and provide subject-based tutoring screens."
+      },
+      {
+        "layer": "AI service",
+        "technology": "FastAPI + multimodal LLM API + verified math tooling",
+        "purpose": "Read submitted questions, produce explanations, and check numeric work."
+      },
+      {
+        "layer": "Persistence",
+        "technology": "PostgreSQL + encrypted object storage + job queue",
+        "purpose": "Store opted-in study sessions and process image inputs asynchronously."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + evaluation question set + Maestro",
+        "purpose": "Check OCR errors, answer quality, upload failures, and study-history access."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "89": {
+    "observed": "A paired identity board and ERP dashboard with logos, brand applications, finance charts, and business modules.",
+    "overview": "Nexora Brand and ERP brings together identity guidelines, erp interface, and operational data.",
+    "requirements": [
+      "Identity guidelines",
+      "ERP interface",
+      "Operational data"
+    ],
+    "approach": "Define the brand’s identity and shared design tokens, then apply them to the operational dashboard and module screens. Implement the underlying business APIs and verify both brand consistency and role-based workflows.",
+    "stack": [
+      {
+        "layer": "Identity",
+        "technology": "Illustrator + Figma",
+        "purpose": "Define logo variants, typography, color tokens, and interface foundations."
+      },
+      {
+        "layer": "ERP interface",
+        "technology": "React + TypeScript + Apache ECharts",
+        "purpose": "Build the illustrated business dashboards and management screens."
+      },
+      {
+        "layer": "Backend",
+        "technology": "NestJS + PostgreSQL + role-based access",
+        "purpose": "Implement module data, permissions, and reporting."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Brand usage review + API tests + Playwright",
+        "purpose": "Check identity consistency, dashboard operations, and access boundaries."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "90": {
+    "observed": "A creator-recruitment campaign showing vertical content examples, social-channel badges, and application instructions.",
+    "overview": "Creadores de Contenido Latinoamérica brings together campaign art direction, vertical content templates, and recruitment graphics.",
+    "requirements": [
+      "Campaign art direction",
+      "Vertical content templates",
+      "Recruitment graphics"
+    ],
+    "approach": "Define each campaign’s message and visual rules, create a reusable layout family, and composite the supplied photography. Review legibility and safe areas before exporting each social format.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Photoshop + Illustrator",
+        "purpose": "Create campaign composites, vector graphics, and typography systems."
+      },
+      {
+        "layer": "Templates",
+        "technology": "Figma",
+        "purpose": "Maintain reusable post, story, cover, and sticker layouts."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Platform-specific export presets",
+        "purpose": "Prepare consistent aspect ratios, safe areas, and optimized image assets."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "91": {
+    "observed": "A telesales CRM with an in-browser calling panel, lead lists, call logs, and WebRTC/SIP architecture labels.",
+    "overview": "TelesalesOS WebRTC CRM brings together browser voice calls, lead workflow, and call history.",
+    "requirements": [
+      "Browser voice calls",
+      "Lead workflow",
+      "Call history"
+    ],
+    "approach": "Start by defining browser voice calls and its content/data model. Prototype lead workflow, implement call history, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "CRM",
+        "technology": "React + TypeScript + NestJS + PostgreSQL",
+        "purpose": "Maintain leads, agent state, call events, and CRM records."
+      },
+      {
+        "layer": "Calling",
+        "technology": "SIP.js + WebRTC + Asterisk",
+        "purpose": "Connect browser calls to a SIP-capable PBX and authorized trunk."
+      },
+      {
+        "layer": "Connectivity",
+        "technology": "coturn + WSS/TLS + SRTP",
+        "purpose": "Support NAT traversal and protected signaling/media transport."
+      },
+      {
+        "layer": "Verification",
+        "technology": "SIP integration tests + browser audio-device tests",
+        "purpose": "Test permission denial, transfers, disconnects, reconnects, and call logging."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "92": {
+    "observed": "A financial dashboard with income/expense summaries, category charts, transactions, and a mobile account view.",
+    "overview": "MiNegocio Financial brings together income and expenses, transaction import, and financial reports.",
+    "requirements": [
+      "Income and expenses",
+      "Transaction import",
+      "Financial reports"
+    ],
+    "approach": "Define account and transaction models with decimal amounts, map import/category rules, and build the summary views. Reconcile reports against transaction-level fixtures and test duplicates, rounding, and date filters.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript + Apache ECharts",
+        "purpose": "Visualize financial summaries, category charts, and transactions."
+      },
+      {
+        "layer": "Data & accounting",
+        "technology": "NestJS + PostgreSQL with decimal amounts",
+        "purpose": "Model entries, categories, account balances, and auditable reporting."
+      },
+      {
+        "layer": "Imports & jobs",
+        "technology": "CSV parsers + Redis/BullMQ",
+        "purpose": "Validate transaction imports and generate repeatable reporting jobs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright",
+        "purpose": "Test totals, rounding, import deduplication, and filtered reports."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "93": {
+    "observed": "A web analytics/security workspace with traffic charts, event tables, form snippets, and reCAPTCHA references.",
+    "overview": "SecureWeb Analytics brings together traffic collection, security event analysis, and form protection.",
+    "requirements": [
+      "Traffic collection",
+      "Security event analysis",
+      "Form protection"
+    ],
+    "approach": "Start by defining traffic collection and its content/data model. Prototype security event analysis, implement form protection, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Dashboard",
+        "technology": "React + TypeScript + Apache ECharts",
+        "purpose": "Build event tables, traffic trends, and security summaries."
+      },
+      {
+        "layer": "Collection & storage",
+        "technology": "FastAPI + PostgreSQL + ClickHouse",
+        "purpose": "Validate events and query larger time-series datasets."
+      },
+      {
+        "layer": "Protection",
+        "technology": "Server-verified reCAPTCHA + rate limiting + structured logs",
+        "purpose": "Protect forms and surface security-relevant activity."
+      },
+      {
+        "layer": "Verification",
+        "technology": "API/load tests + Playwright",
+        "purpose": "Check event validation, retention, rate limits, and filtered reporting."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "94": {
+    "observed": "A responsive full-stack dashboard with sales charts, product tables, orders, and user-management screens.",
+    "overview": "BizFlow Full-Stack brings together business api, product administration, and role-based dashboards.",
+    "requirements": [
+      "Business API",
+      "Product administration",
+      "Role-based dashboards"
+    ],
+    "approach": "Start by defining business api and its content/data model. Prototype product administration, implement role-based dashboards, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "React + TypeScript + TanStack Table + Apache ECharts",
+        "purpose": "Build product, order, customer, and reporting workspaces."
+      },
+      {
+        "layer": "Application",
+        "technology": "NestJS + PostgreSQL",
+        "purpose": "Implement validated business APIs and relational records."
+      },
+      {
+        "layer": "Access & jobs",
+        "technology": "OIDC + role-based access + Redis/BullMQ",
+        "purpose": "Scope modules by role and process background operations."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Vitest + Playwright + API tests",
+        "purpose": "Check CRUD flows, permissions, report totals, and background-job failures."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "95": {
+    "observed": "A local-services app with nearby providers on a map, service booking, chat, ratings, and provider views.",
+    "overview": "ServiCity Local Services App brings together geospatial discovery, service booking, and provider chat.",
+    "requirements": [
+      "Geospatial discovery",
+      "Service booking",
+      "Provider chat"
+    ],
+    "approach": "Start by defining geospatial discovery and its content/data model. Prototype service booking, implement provider chat, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Mobile",
+        "technology": "React Native + TypeScript + Mapbox",
+        "purpose": "Implement provider discovery, maps, bookings, and provider screens."
+      },
+      {
+        "layer": "Backend",
+        "technology": "NestJS + PostgreSQL/PostGIS + WebSockets",
+        "purpose": "Find nearby providers and synchronize booking/chat state."
+      },
+      {
+        "layer": "Notifications & assets",
+        "technology": "FCM/APNs + S3-compatible storage",
+        "purpose": "Deliver booking updates and host controlled provider/job attachments."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Maestro + geospatial/API tests",
+        "purpose": "Check location permissions, booking conflicts, chat reconnects, and ratings."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "96": {
+    "observed": "A Japanese salon website with treatment photography, service descriptions, staff/service content, and mobile views.",
+    "overview": "Blanc Eyebrow Salon brings together treatment catalog, appointment requests, and responsive content.",
+    "requirements": [
+      "Treatment catalog",
+      "Appointment requests",
+      "Responsive content"
+    ],
+    "approach": "Start by defining treatment catalog and its content/data model. Prototype appointment requests, implement responsive content, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + Sanity CMS",
+        "purpose": "Publish treatments, imagery, pricing, and responsive salon pages."
+      },
+      {
+        "layer": "Booking",
+        "technology": "Booking-provider API or hosted booking link",
+        "purpose": "Connect availability and appointment confirmation to the existing scheduler."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check mobile booking, content readability, and accessible navigation."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "97": {
+    "observed": "An academy assistant flow with parent/student conversations, lead capture, follow-ups, and a lead dashboard.",
+    "overview": "AI Academy Assistant brings together enrollment leads, knowledge responses, and follow-up reminders.",
+    "requirements": [
+      "Enrollment leads",
+      "Knowledge responses",
+      "Follow-up reminders"
+    ],
+    "approach": "Start by defining enrollment leads and its content/data model. Prototype knowledge responses, implement follow-up reminders, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Channels",
+        "technology": "WhatsApp Cloud API + web forms + email connector",
+        "purpose": "Capture enrollment inquiries through the illustrated contact channels."
+      },
+      {
+        "layer": "Assistant & CRM",
+        "technology": "FastAPI + LLM retrieval + PostgreSQL",
+        "purpose": "Answer from approved academy material and maintain enrollment lead state."
+      },
+      {
+        "layer": "Follow-up & admin",
+        "technology": "Redis/BullMQ + React/TypeScript",
+        "purpose": "Schedule reminders and let staff review conversations and lead progress."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Conversation fixtures + retrieval evaluations + Playwright",
+        "purpose": "Check enrollment facts, follow-up consent/state, and staff handoff."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "98": {
+    "observed": "An ERPNext-styled point-of-sale terminal with cart totals, payments, terminal management, permissions, and sales reports.",
+    "overview": "ERP POS brings together pos transactions, terminal sessions, and inventory updates.",
+    "requirements": [
+      "POS transactions",
+      "Terminal sessions",
+      "Inventory updates"
+    ],
+    "approach": "Configure product, tax, stock, user, and terminal models in ERPNext; implement the illustrated POS workflow and deliberate offline behavior. Test physical peripherals, session closure, and stock reconciliation before rollout.",
+    "stack": [
+      {
+        "layer": "ERP & runtime",
+        "technology": "ERPNext + Frappe Framework + Python + MariaDB",
+        "purpose": "Build on existing sales, product, stock, and accounting models."
+      },
+      {
+        "layer": "Terminal",
+        "technology": "Frappe JavaScript UI + service worker/IndexedDB",
+        "purpose": "Implement terminal sessions and deliberate offline/reconnect behavior."
+      },
+      {
+        "layer": "Integrations",
+        "technology": "Receipt printer/payment-terminal SDK + Redis workers",
+        "purpose": "Connect supported peripherals and synchronize completed sales."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Frappe tests + terminal/device integration checks",
+        "purpose": "Test tax totals, role permissions, offline replay, printing, and stock updates."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "99": {
+    "observed": "An AI transformation overview showing agent workflows, enterprise integrations, reporting, and an architecture/tooling section.",
+    "overview": "AI Transformation · Redefining Business Potential brings together tool-using agents, enterprise connectors, and evaluation and monitoring.",
+    "requirements": [
+      "Tool-using agents",
+      "Enterprise connectors",
+      "Evaluation and monitoring"
+    ],
+    "approach": "Define bounded agent tasks and permitted tools, connect authorized knowledge sources, and implement stateful tool execution. Evaluate outputs, access boundaries, failure recovery, and monitoring before enabling operational actions.",
+    "stack": [
+      {
+        "layer": "Agent service",
+        "technology": "Python + FastAPI + LangGraph + model-provider API",
+        "purpose": "Orchestrate tool-using agent workflows with explicit state transitions."
+      },
+      {
+        "layer": "Knowledge & connectors",
+        "technology": "PostgreSQL/pgvector + scoped enterprise APIs",
+        "purpose": "Retrieve authorized material and integrate approved business systems."
+      },
+      {
+        "layer": "Execution & observability",
+        "technology": "Redis workers + OpenTelemetry + evaluation datasets",
+        "purpose": "Track runs, retry safe tasks, measure quality, and log tool activity."
+      },
+      {
+        "layer": "Verification",
+        "technology": "pytest + tool-contract tests + offline evaluations",
+        "purpose": "Check tool authorization, hallucinated actions, failure recovery, and answer quality."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "100": {
+    "observed": "A multilingual course marketplace with shopping, lesson playback, student progress, language selection, and administration.",
+    "overview": "GlobalLearn Multilingual Learning Platform brings together course commerce, video lessons, and localized learning progress.",
+    "requirements": [
+      "Course commerce",
+      "Video lessons",
+      "Localized learning progress"
+    ],
+    "approach": "Start by defining course commerce and its content/data model. Prototype video lessons, implement localized learning progress, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Experience",
+        "technology": "Next.js + TypeScript + next-intl",
+        "purpose": "Build localized catalogs, student pages, and course checkout entry points."
+      },
+      {
+        "layer": "Learning backend",
+        "technology": "NestJS + PostgreSQL + role-based access",
+        "purpose": "Manage course enrollment, lesson progress, and administration."
+      },
+      {
+        "layer": "Media & payment",
+        "technology": "Mux + payment-provider API + signed webhooks",
+        "purpose": "Stream authorized lessons and activate enrollments after confirmed payment."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + integration tests",
+        "purpose": "Check locale routing, paid access, playback progress, and refund events."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "103": {
+    "observed": "A monochrome jewelry identity guide with logo variants, clear-space guidance, packaging, and digital applications.",
+    "overview": "Lumière Joias Monochrome Brand Guide brings together vector logo variants, brand specifications, and packaging applications.",
+    "requirements": [
+      "Vector logo variants",
+      "Brand specifications",
+      "Packaging applications"
+    ],
+    "approach": "Explore logo concepts, establish typography and color rules, then extend the selected identity into the applications shown. Deliver vector masters and a reviewed usage guide.",
+    "stack": [
+      {
+        "layer": "Design",
+        "technology": "Adobe Illustrator",
+        "purpose": "Create scalable logos, typography layouts, and identity assets."
+      },
+      {
+        "layer": "Applications",
+        "technology": "Figma + Adobe Photoshop",
+        "purpose": "Explore digital components and photographic application mockups."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "SVG/PDF exports + color-managed brand guide",
+        "purpose": "Package reusable artwork and document color, spacing, and type rules."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "104": {
+    "observed": "A Japanese emergency plumbing landing page showing phone calls to action, service categories, and price comparisons.",
+    "overview": "Japanese Plumbing Repair Service Landing Page brings together local service content, call conversion, and service request form.",
+    "requirements": [
+      "Local service content",
+      "Call conversion",
+      "Service request form"
+    ],
+    "approach": "Start by defining local service content and its content/data model. Prototype call conversion, implement service request form, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Build fast mobile service, pricing, and local coverage sections."
+      },
+      {
+        "layer": "Conversion",
+        "technology": "tel links + server-validated request form",
+        "purpose": "Connect calls and service inquiries without exposing private submissions."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check click-to-call, pricing readability, form errors, and mobile navigation."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "105": {
+    "observed": "A wellness storefront with supplement products, mobile pages, purchase summaries, and a PIX payment step.",
+    "overview": "NaturaVida Wellness E-commerce brings together supplement catalog, local payment integration, and order fulfillment.",
+    "requirements": [
+      "Supplement catalog",
+      "Local payment integration",
+      "Order fulfillment"
+    ],
+    "approach": "Start by defining supplement catalog and its content/data model. Prototype local payment integration, implement order fulfillment, then validate the complete workflow using the checks below.",
+    "stack": [
+      {
+        "layer": "Storefront",
+        "technology": "Shopify Online Store 2.0 + Liquid + CSS + JavaScript",
+        "purpose": "Responsive product, collection, cart, and theme sections."
+      },
+      {
+        "layer": "Commerce",
+        "technology": "Shopify catalog + inventory + hosted checkout",
+        "purpose": "Product variants, stock, orders, and checkout."
+      },
+      {
+        "layer": "Integration",
+        "technology": "Shopify Admin API + webhooks",
+        "purpose": "Connect fulfillment and external order-management needs."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Shopify CLI + Playwright",
+        "purpose": "Theme development and end-to-end shopping checks."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "106": {
+    "observed": "A legal practice system with case lists, tasks, calendars, document automation, analytics, and mobile screens.",
+    "overview": "LexPro Legal SaaS brings together matter management, legal deadlines, and document generation.",
+    "requirements": [
+      "Matter management",
+      "Legal deadlines",
+      "Document generation"
+    ],
+    "approach": "Map matters, staff permissions, task/deadline rules, and document templates; implement the workspace and background reminders. Validate date calculations, document access, and matter-specific audit history.",
+    "stack": [
+      {
+        "layer": "Interface",
+        "technology": "Next.js + TypeScript + calendar components",
+        "purpose": "Build matter lists, task views, deadlines, and document workspaces."
+      },
+      {
+        "layer": "Domain backend",
+        "technology": "NestJS + PostgreSQL + role-based access",
+        "purpose": "Persist matters, parties, deadlines, and scoped legal records."
+      },
+      {
+        "layer": "Documents & jobs",
+        "technology": "S3-compatible storage + DOCX/PDF templating + BullMQ",
+        "purpose": "Generate versioned documents and schedule deadline reminders."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Integration tests + Playwright",
+        "purpose": "Check deadline rules, document permissions, calendar changes, and templates."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "107": {
+    "observed": "Vertical dental-service video compositions with presenter footage, procedure captions, and a production sequence.",
+    "overview": "Dental Clinic Video Portfolio in Spanish brings together vertical video edit, treatment captions, and social delivery.",
+    "requirements": [
+      "Vertical video edit",
+      "Treatment captions",
+      "Social delivery"
+    ],
+    "approach": "Approve the script and consented footage, assemble concise treatment-specific cuts, and add captions and supporting graphics. Review clinical wording and mobile legibility before exporting the requested social formats.",
+    "stack": [
+      {
+        "layer": "Editing",
+        "technology": "DaVinci Resolve",
+        "purpose": "Assemble presenter footage, procedure explanations, and vertical social cuts."
+      },
+      {
+        "layer": "Graphics & captions",
+        "technology": "After Effects + subtitle workflow",
+        "purpose": "Create readable treatment titles, overlays, and synchronized captions."
+      },
+      {
+        "layer": "Delivery",
+        "technology": "Reviewed medical copy + licensed assets + social export presets",
+        "purpose": "Verify approved claims, consent for footage, caption readability, and export quality."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "12": {
+    "observed": "A professional security-services overview listing Microsoft identity, endpoint, and monitoring products.",
+    "overview": "Microsoft Security Engineering Profile Overview combines identity management, endpoint protection, security monitoring.",
+    "requirements": [
+      "Identity management",
+      "Endpoint protection",
+      "Security monitoring"
+    ],
+    "approach": "Map the required identity, endpoint, and monitoring services, validate policy behavior in a test tenant, and document repeatable deployment and incident-response checks.",
+    "stack": [
+      {
+        "layer": "Identity",
+        "technology": "Microsoft Entra ID",
+        "purpose": "Define identity, access, and conditional-access configuration."
+      },
+      {
+        "layer": "Protection",
+        "technology": "Microsoft Defender + Intune",
+        "purpose": "Manage endpoint posture and security policy."
+      },
+      {
+        "layer": "Monitoring",
+        "technology": "Microsoft Sentinel + KQL + PowerShell",
+        "purpose": "Aggregate security events and automate validated administrative workflows."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "17": {
+    "observed": "An author website with a WordPress-to-Squarespace migration diagram and editorial content.",
+    "overview": "Natalia Gurdián combines content migration, redirect mapping, responsive author pages.",
+    "requirements": [
+      "Content migration",
+      "Redirect mapping",
+      "Responsive author pages"
+    ],
+    "approach": "Inventory the source content and URLs, migrate into the destination CMS, and map redirects. Validate page content, links, forms, mobile layouts, and search indexing before cutover.",
+    "stack": [
+      {
+        "layer": "Source & destination",
+        "technology": "WordPress export + Squarespace",
+        "purpose": "Move content into the destination CMS and rebuild page templates."
+      },
+      {
+        "layer": "Migration tools",
+        "technology": "Python + CSV/XML processing + redirect map",
+        "purpose": "Transform content, preserve URLs where possible, and map redirects."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + link checker",
+        "purpose": "Check migrated content, forms, mobile rendering, and redirect behavior."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  },
+  "76": {
+    "observed": "A construction-services portfolio with project photography, service categories, testimonials, and mobile pages.",
+    "overview": "Portfólio de Construção Civil Andrade Silva combines project publishing, service catalog, inquiry form.",
+    "requirements": [
+      "Project publishing",
+      "Service catalog",
+      "Inquiry form"
+    ],
+    "approach": "Define the service and project content model, prototype responsive layouts, then implement content publishing and inquiry handling. Check navigation, media, form states, and accessibility.",
+    "stack": [
+      {
+        "layer": "Website",
+        "technology": "Astro + TypeScript + CSS",
+        "purpose": "Fast, responsive service and project pages."
+      },
+      {
+        "layer": "Content",
+        "technology": "Sanity CMS + image optimization",
+        "purpose": "Manage project imagery, service content, and localized copy."
+      },
+      {
+        "layer": "Forms",
+        "technology": "Server-side form endpoint + transactional email",
+        "purpose": "Validate inquiries and deliver them to a configured team inbox."
+      },
+      {
+        "layer": "Verification",
+        "technology": "Playwright + axe-core",
+        "purpose": "Check navigation, forms, responsive layouts, and accessibility."
+      }
+    ],
+    "basis": "Recommended implementation based on visible artwork and stated product labels; original source code and architecture are not supplied."
+  }
+}
